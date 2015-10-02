@@ -1,0 +1,3 @@
+parameters:
+  m4grio_sepomex:
+    entity: m4grioSepomexBundle:Sepomex

@@ -29,7 +29,7 @@ class SepomexController extends Controller
     {
         /** @var JsonResponse $response */
         $response = $this->getDefaultResponse();
-        $repository = 'm4grioSepomexBundle:Sepomex'/*$this->container->getParameter('repo')*/;
+        $repository = $this->container->getParameter('m4grio_sepomex.entity');
         $result = $this->getDoctrine()
             ->getRepository($repository)
             ->findByDCodigo($postalCode)

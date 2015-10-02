@@ -18,11 +18,10 @@
         "phpunit/phpunit": "~4.8"
     },
     "autoload": {
-        "psr-4": {
-            "m4grio\\SepomexBundle\\": ""
-        }
+        "psr-0": {"m4grio\\SepomexBundle": ""}
     },
     "suggest": {
         "doctrine/migrations": "Allow to create and populate sepomex table in your MySQL database"
-    }
+    },
+    "target-dir": "m4grio/SepomexBundle"
 }

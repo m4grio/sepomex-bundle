@@ -44,14 +44,14 @@ abstract class SepomexMigration extends AbstractMigration
         $this->addSql('DROP TABLE sepomex');
     }
 
-    private function getRawData()
+    protected function getRawData()
     {
         $result = file_get_contents(__DIR__.'/sepomex-chunks.sql');
 
         return $result;
     }
 
-    private function getDataChunks()
+    protected function getDataChunks()
     {
         $result = [];
         $rawData = $this->getRawData();
